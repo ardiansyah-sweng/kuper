@@ -52,10 +52,17 @@ class KalkulatorTest extends TestCase
     }    
 
     /** @test */
-    public function createIndividu()
+    public function createIndividuMoreThanZero()
     {
         $kuper = new Kuper;
         $this->assertTrue($kuper->createIndividu(1));
+    }
+
+    /** @test */
+    public function createIndividuLessThanZero()
+    {
+        $kuper = new Kuper;
+        $this->assertNull($kuper->createIndividu(0));
     }
 
     /** @test */

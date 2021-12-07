@@ -36,11 +36,12 @@ class Main
             while ($row = $listOfProduct->fetch_assoc()){
                 echo "Kode:". $row["kode"].' Item: '.$row['item'].' Harga: '.$row['item_price'].'<br>';
                 echo "<img src='img/" . $row['item_picture'] . "'style='width:200px; height:100px;'><br>";
+                echo "\n";
             }
         } else {
             echo "0 results.";
         }
-        
+        echo "\n \n";
     }
 }
 

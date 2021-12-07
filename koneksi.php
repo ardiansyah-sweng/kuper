@@ -10,6 +10,11 @@ class KoneksiDatabase
  
     function konekKeDatabase()
     {
-        return mysqli_connect($this->namaServer, $this->namaUser, $this->passwordInPlaintext, $this->namaDB);
+        return mysqli_connect(
+            $this->namaServer, 
+            $this->namaUser, 
+            $this->passwordInPlaintext, 
+            $this->namaDB
+        );
     }
 }
